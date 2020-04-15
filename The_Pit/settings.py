@@ -25,7 +25,7 @@ SECRET_KEY = '^c-pru9#w71r=lps6h0n4h4z+_lc23-3b0qd5*xb9rf@i8_eb%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','shredfull.herokuapp.com']
 
 
 # Application definition
