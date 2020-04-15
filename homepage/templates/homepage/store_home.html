@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
+{% load static %}
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="TopGym Template">
-    <meta name="keywords" content="TopGym, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Classes | Template</title>
+	<title>Store | The Pit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700,900" rel="stylesheet">
+	<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=arial:100,300,300i,400,500,700,900" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/font-awesome.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/owl.carousel.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/magnific-popup.css'%}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/barfiller.css'%}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/slicknav.min.css'%}" type="text/css">
+	<link rel="stylesheet" href="{%static 'css/style.css'%}" type="text/css">
+	
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{%static 'store/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'store/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'store/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'store/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'store/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'store/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{%static 'store/css/main.css' %}">
+<!--===============================================================================================-->
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-    <!-- Header Section Begin -->
-    <header class="header-section">
+	<header class="header-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="main-menu">
                         <div class="logo">
-                            <a href="./index.html">
-                                <img src="img/logo.png" alt="">
+                            <a href="{% url 'home'}">
+                                <img src="{%static 'img/logo.png' %}" alt="">
                             </a>
                         </div>
                         <nav class="mobile-menu">
                             <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./about-us.html">About us</a></li>
-                                <li><a href="./classes.html">Classes</a></li>
-                                <li><a href="./elements.html">Instructors</a></li>
-                                <li><a href="./blog.html">News</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                                <li class="search-btn search-trigger"><i class="fa fa-search"></i></li>
+                                <li><a href="{% url 'home'%}">Home</a></li>
+                                <li><a href="#">store</a></li>
+                                <li><a href="#">Personal</br>Trainers</a></li>
+                                <li><a href="#">Gym Centers</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="{% url 'about'%}">About us</a></li>     
                             </ul>
                         </nav>
                         <div id="mobile-menu-wrap"></div>
@@ -55,239 +61,76 @@
             </div>
         </div>
     </header>
-    <!-- Header End -->
-    <!-- Search Bar Begin -->
-    <section class="search-bar-wrap">
-        <span class="search-close"><i class="fa fa-close"></i></span>
-        <div class="search-bar-table">
-            <div class="search-bar-tablecell">
-                <div class="search-bar-inner">
-                    <h2>Search</h2>
-                    <form action="#">
-                        <input type="search" placeholder="Type Keywords">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Search Bar End -->
-    <!-- Top Social Begin -->
-    <div class="top-social">
-        <div class="top-social-links">
-            <ul>
-                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- Top Social End -->
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-area set-bg" data-setbg="img/classes/classes-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb-content">
-                        <h2>Classes</h2>
-                        <div class="links">
-                            <a href="./index.html">Home</a>
-                            <a href="./classes.html" class="rt-breadcrumb">Classes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Breadcrumb Section End -->
-    <!-- Classes Section Begin -->
-    <section class="classes-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-classes">
-                        <div class="classes-img">
-                            <img src="img/classes/classes-1.jpg" alt="">
-                        </div>
-                        <div class="classes-text">
-                            <h5>Pilates</h5>
-                            <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-classes">
-                        <div class="classes-img">
-                            <img src="img/classes/classes-2.jpg" alt="">
-                        </div>
-                        <div class="classes-text">
-                            <h5>Body Building</h5>
-                            <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-classes">
-                        <div class="classes-img">
-                            <img src="img/classes/classes-3.jpg" alt="">
-                        </div>
-                        <div class="classes-text">
-                            <h5>Fitness</h5>
-                            <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-classes">
-                        <div class="classes-img">
-                            <img src="img/classes/classes-4.jpg" alt="">
-                        </div>
-                        <div class="classes-text">
-                            <h5>Yoga</h5>
-                            <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-classes">
-                        <div class="classes-img">
-                            <img src="img/classes/classes-5.jpg" alt="">
-                        </div>
-                        <div class="classes-text">
-                            <h5>Trx</h5>
-                            <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-classes">
-                        <div class="classes-img">
-                            <img src="img/classes/classes-6.jpg" alt="">
-                        </div>
-                        <div class="classes-text">
-                            <h5>Spinning</h5>
-                            <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
-                                nulla pretium, vitae ornare leo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Classes Section End -->
-    <!-- Fitness Plan Begin -->
-    <section class="fitness-section inside-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-6">
-                    <div class="single-fitness-feature">
-                        <div class="fitness-number">
-                            <span>01</span>
-                        </div>
-                        <div class="fitness-text">
-                            <h4>Get fitted</h4>
-                            <p>Arcu a tellus pellentesque ultrices. Ut euismod luctus elit id eleifend. Donec semper
-                                massa a imperdiet mattis. </p>
-                        </div>
-                    </div>
-                    <div class="single-fitness-feature">
-                        <div class="fitness-number">
-                            <span>02</span>
-                        </div>
-                        <div class="fitness-text">
-                            <h4>Try Pilates</h4>
-                            <p>Ut euismod luctus elit id eleifend. Donec semper massa a imperdiet mattis. In vel mattis
-                                neque, nec ultricies lectus. </p>
-                        </div>
-                    </div>
-                    <div class="single-fitness-feature">
-                        <div class="fitness-number">
-                            <span>03</span>
-                        </div>
-                        <div class="fitness-text">
-                            <h4>Healthy Diet</h4>
-                            <p>Arcu a tellus pellentesque ultrices. Ut euismod luctus elit id eleifend. Donec semper
-                                massa a imperdiet mattis. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 offset-lg-2 text-md-right text-left">
-                    <div class="single-fitness-feature">
-                        <div class="fitness-number left-number">
-                            <span>04</span>
-                        </div>
-                        <div class="fitness-text left-text">
-                            <h4>Meditation</h4>
-                            <p>Arcu a tellus pellentesque ultrices. Ut euismod luctus elit id eleifend. Donec semper
-                                massa a imperdiet mattis. </p>
-                        </div>
-                    </div>
-                    <div class="single-fitness-feature">
-                        <div class="fitness-number left-number">
-                            <span>05</span>
-                        </div>
-                        <div class="fitness-text left-text">
-                            <h4>Diet Plan</h4>
-                            <p>Ut euismod luctus elit id eleifend. Donec semper massa a imperdiet mattis. In vel mattis
-                                neque, nec ultricies lectus. </p>
-                        </div>
-                    </div>
-                    <div class="single-fitness-feature">
-                        <div class="fitness-number left-number">
-                            <span>06</span>
-                        </div>
-                        <div class="fitness-text left-text">
-                            <h4>Grow Muscles</h4>
-                            <p>Arcu a tellus pellentesque ultrices. Ut euismod luctus elit id eleifend. Donec semper
-                                massa a imperdiet mattis. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Fitness Plan End -->
-    <!-- Classes Call To Action Section -->
-    <section class="classes-callto-section set-bg" data-setbg="img/classes/classes-callto-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="classes-callto-text">
-                        <span>Join our gym now!</span>
-                        <h2>25% Discount</h2>
-                        <p>Arcu a tellus pellentesque ultrices. Ut euismod luctus elit id eleifend. Donec semper massa a
-                            imperdiet mattis. </p>
-                        <a href="#" class="primary-btn">Join</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Classes Call To Action End -->
-    <!-- Footer Section Begin -->
-    <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+	
+	<!--  -->
+
+	<div class="size1 overlay1">
+		<!--  -->
+		<div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
+			<h3 class="l1-txt1 txt-center p-b-25">
+				Coming Soon
+			</h3>
+
+			<p class="m2-txt1 txt-center p-b-48">
+				This Feature will be available soon, follow us for update now!
+			</p>
+
+			<div class="flex-w flex-c-m cd100 p-b-33">
+
+				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+					<span class="l2-txt1 p-b-9 days">60</span>
+					<span class="s2-txt1">Days</span>
+				</div>
+
+				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+					<span class="l2-txt1 p-b-9 hours">17</span>
+					<span class="s2-txt1">Hours</span>
+				</div>
+
+				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+					<span class="l2-txt1 p-b-9 minutes">50</span>
+					<span class="s2-txt1">Minutes</span>
+				</div>
+
+				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+					<span class="l2-txt1 p-b-9 seconds">39</span>
+					<span class="s2-txt1">Seconds</span>
+				</div>
+			</div>
+
+			<form class="w-full flex-w flex-c-m validate-form">
+
+				<div class="wrap-input100 validate-input where1" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input100 placeholder0 s2-txt2" type="text" name="email" placeholder="Enter Email Address">
+					<span class="focus-input100"></span>
+				</div>
+				
+				
+				<button class="flex-c-m size3 s2-txt3 how-btn1 trans-04 where1">
+					Subscribe
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="footer-section set-bg" data-setbg="{%static 'img/footer-bg.jpg' %}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-content">
                         <div class="footer-logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
+                            <a href="#"><img src="{%static 'img/logo.png' %}" alt=""></a>
                         </div>
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="./home.html">Home</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Classes</a></li>
-                                <li><a href="#">Instructors</a></li>
+                                <li><a href="{% url 'home'%}">Home</a></li>
+                                <li><a href="#">Store</a></li>
+                                <li><a href="#">Personal Trainers</a></li>
+                                <li><a href="#">Gym Centers</a></li>
                                 <li><a href="#">News</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="{%url 'about'%}">About us</a></li>
+                                
                             </ul>
                         </div>
                         <div class="subscribe-form">
@@ -304,29 +147,66 @@
                             <a href="#"><i class="fa fa-behance"></i></a>
                         </div>
                         <div class="footer-icon-img">
-                            <img src="img/footer-icon.png" alt="">
+                            <img src="{%static 'img/footer-icon.png' %}" alt="">
                         </div>
                         <div class="copyright">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+ <!--Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Footer Section End -->
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/circle-progress.min.js"></script>
-    <script src="js/jquery.barfiller.js"></script>
-    <script src="js/main.js"></script>
+
+	<!-- Js Plugins -->
+    <script src="{%static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{%static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{%static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{%static 'js/circle-progress.min.js' %}"></script>
+    <script src="{%static 'js/jquery.barfiller.js' %}"></script>
+    <script src="{%static 'js/main.js' %}"></script>
+
+<!--===============================================================================================-->	
+	<script src="{%static 'store/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'store/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{%static 'store/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'store/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'store/vendor/countdowntime/moment.min.js' %}"></script>
+	<script src="{%static 'store/vendor/countdowntime/moment-timezone.min.js' %}"></script>
+	<script src="{%static 'store/vendor/countdowntime/moment-timezone-with-data.min.js' %}"></script>
+	<script src="{%static 'store/vendor/countdowntime/countdowntime.js' %}"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 35,
+			endtimeHours: 18,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{%static 'store/vendor/tilt/tilt.jquery.min.js' %}"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="{%static 'store/js/main.js' %}"></script>
+
 </body>
-
 </html>

@@ -4,5 +4,13 @@ from .models import Background
 # Create your views here.
 
 def HomeView (requests):
-    
-    return render(requests, 'homepage/index.html') #{'background':bg})
+    bg =Background.objects
+
+    return render(requests, 'homepage/index.html', {'background':bg})
+
+def AboutView (requests):
+    return render(requests,'homepage/about-us.html')
+
+
+def StoreView (requests):
+    return render (requests,'homepage/store_home.html')
