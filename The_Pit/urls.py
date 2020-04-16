@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from homepage.views import HomeView,AboutView,StoreView
 from django.conf import settings
+from blog.views import PostView
+from trainers.views import TrainerView,GymAgencyView
 from django.conf.urls.static import static
 
 urlpatterns = [
@@ -24,5 +26,9 @@ urlpatterns = [
     path('', HomeView, name='home'),
     path('about/', AboutView,name='about'),
     path('store/', StoreView, name='store'),
+    path('blog/', PostView, name='blog'),
+    path('trainers/',TrainerView,name='trainers'),
+    path('gymcenters/',GymAgencyView,name='gym'),
+
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
