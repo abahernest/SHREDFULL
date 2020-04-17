@@ -8,6 +8,8 @@ django = "*"
 pillow = "*"
 whitenoise = "*"
 gunicorn = "==19.9.0"
+python-memcached = "*"
+django-image-optimizer = "*"
 
 [dev-packages]
 
