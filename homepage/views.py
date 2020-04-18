@@ -12,6 +12,6 @@ def HomeView (requests):
 def AboutView (requests):
     return render(requests,'homepage/about-us.html')
 
-
+@cache_page(60*60)
 def StoreView (requests):
     return render (requests,'homepage/store_home.html')
