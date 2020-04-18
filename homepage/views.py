@@ -6,9 +6,9 @@ from .models import Background
 @cache_page(60 *30)
 def HomeView (requests):
     bg =Background.objects
-
     return render(requests, 'homepage/index.html', {'background':bg})
 @cache_page(60*60)
+
 def AboutView (requests):
     return render(requests,'homepage/about-us.html')
 
